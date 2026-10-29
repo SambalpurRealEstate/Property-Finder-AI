@@ -20,7 +20,7 @@ property_data = load_data()
 groq_api_key = "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"
 
 # Initialize Groq LLM (Llama 3 model via Groq)
-llm = ChatGroq(model_name="llama-3.3-70b-versatile", groq_api_key=groq_api_key)
+llm = ChatGroq(model_name="llama3-8b-8192", groq_api_key=groq_api_key)
 
 # --- UI Filters (Phase 1) ---
 st.sidebar.header("🔍 Advanced Filters")
