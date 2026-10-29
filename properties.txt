@@ -1,0 +1,17 @@
+Property Name: Sunshine Heights 2 BHK
+Location: Prime City Center
+Price: ₹45 Lakhs
+Features: 2 Bedrooms, 2 Bathrooms, Modular Kitchen, 24/7 Water & Power Backup, Parking Available.
+Status: Ready to move in.
+
+Property Name: Green Valley 3 BHK
+Location: Andheri West
+Price: ₹85 Lakhs
+Features: 3 Bedrooms, 3 Bathrooms, Swimming Pool, Gym, Reserved Parking.
+Status: Under Construction.
+
+Property Name: Royal Palms Villa
+Location: Golf Course Road
+Price: ₹1.5 Crores
+Features: 4 Bedrooms, Private Garden, Modular Kitchen, 24/7 Security, 2 Covered Car Parks.
+Status: Ready to move in.
