@@ -17,7 +17,7 @@ def load_data():
 property_data = load_data()
 
 # Groq API Configuration (Directly integrated)
-groq_api_key = "GROQ_API_KEY"
+groq_api_key = "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"
 
 # Initialize Groq LLM (Llama 3 model via Groq)
 llm = ChatGroq(model_name="llama3-8b-8192", groq_api_key=groq_api_key)
