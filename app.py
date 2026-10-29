@@ -1,7 +1,7 @@
 import os
 import streamlit as st
 from langchain_community.document_loaders import TextLoader
-from langchain_community.llms import Ollama
+from langchain_groq import ChatGroq
 
 st.set_page_config(page_title="Property Finder AI", page_icon="🏠", layout="centered")
 
@@ -13,10 +13,14 @@ def load_data():
     loader = TextLoader("properties.txt")
     documents = loader.load()
     return documents[0].page_content
+
 property_data = load_data()
 
-# Local Ollama Model
-llm = Ollama(model="llama3")
+# Groq API Configuration (Directly integrated)
+groq_api_key = "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"
+
+# Initialize Groq LLM (Llama 3 model via Groq)
+llm = ChatGroq(model_name="llama3-70b-8192", groq_api_key=groq_api_key)
 
 # --- UI Filters (Phase 1) ---
 st.sidebar.header("🔍 Advanced Filters")
@@ -64,8 +68,8 @@ Strict Instructions:
 """
     response = llm.invoke(prompt)
     
-    # Text Response from Llama 3
-    st.markdown(response)
+    # Text Response from Groq Llama 3
+    st.markdown(response.content)
     
     st.divider()
     
