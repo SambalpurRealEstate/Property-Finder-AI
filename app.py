@@ -10,11 +10,9 @@ st.write("Apne pasand ki location aur budget select karein, aur instant recommen
 
 @st.cache_resource
 def load_data():
-    desktop_path = os.path.join(os.path.expanduser("~"), "Desktop", "properties.txt")
-    loader = TextLoader(desktop_path)
+    loader = TextLoader("properties.txt")
     documents = loader.load()
     return documents[0].page_content
-
 property_data = load_data()
 
 # Local Ollama Model
